@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SageFoundation.Playground;
+using System;
 
 namespace SageFoundation {
     class Hello {
@@ -42,6 +43,12 @@ namespace SageFoundation {
                     case "9":
                         ArrayExample2.Go();
                         break;
+                    case "A":
+                        LinqOrderBy.Go();
+                        break;
+                    case "B":
+                        Misc.Go();
+                        break;
                 }
                 cki = Console.ReadKey(false);
             } while (cki.Key != ConsoleKey.Escape);
@@ -67,6 +74,10 @@ namespace SageFoundation {
             Console.WriteLine("7. Break");
             Console.WriteLine("8. Array 1");
             Console.WriteLine("9. Array 2");
+            Console.WriteLine("---------------");
+            Console.WriteLine("A. LinqOrderBy");
+            Console.WriteLine("B. Misc");
+            Console.WriteLine("---------------");
             Console.WriteLine("(esc to exit)");
             Console.WriteLine();
         }
